@@ -7,4 +7,20 @@ Note that this program is _not_ a full-featured oscilloscope GUI for the 2090, a
 
 OpenHantek supports multiple Hantek 'scope models and offers many features.  But as a result, it's a complex C++ program.  The code here is an attempt to minimize that complexity and present something easier to understand for the Pascal programmer so that (s)he can write programs that take advantage of the DSO-2090 capabilities. 
 
+Unit "main" contains the GUI for the 'scope hardware.  It calls the "dsoControl" and "display" units.  
+Unit "dsoControl" declares all the variables, constants and procedures available to control the 'scope.
+Unit "dsoUSB" contains the 'scop-specific procedures to communicate with the DSO-2090.  
+Unit "libusb" a Pascal wrapper for the standard USB library.
+Unit "Display" handles analysis and display of the data acquired from the 'scope.  This is where you will 
+	want to do much of your own special program development.  The unit here simply 	presents the acquired
+ 	data in a string grid.  This unit has its own form.
 
+In general, the relationship between the units looks something like this:
+
+		---> Display 
+		|
+		|
+	main ---------> dsoControl -----> dsoUSB -----> libusb
+
+All of the "magic numbers" that are used in the dsoControl and dsoUSB units have been extracted from the OpenHantek
+code.
