@@ -13,7 +13,9 @@ Unit "dsoUSB" contains the 'scop-specific procedures to communicate with the DSO
 Unit "libusb" a Pascal wrapper for the standard USB library.
 Unit "Display" handles analysis and display of the data acquired from the 'scope.  This is where you will 
 	want to do much of your own special program development.  The unit here simply 	presents the acquired
- 	data in a string grid.  This unit has its own form.
+ 	data in a string grid.  This unit has its own form.  In the string grid, column 0 is the data index, column 1
+	is the data from channel one and column 2 is the data from 'scope channel two.
+	column 
 
 In general, the relationship between the units looks something like this:
 
@@ -24,3 +26,5 @@ In general, the relationship between the units looks something like this:
 
 All of the "magic numbers" that are used in the dsoControl and dsoUSB units have been extracted from the OpenHantek
 code.
+
+DSOTest is the compiled program, with debug enabled so it is big.
