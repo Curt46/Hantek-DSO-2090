@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="41">
+      <Unit0>
+        <Filename Value="DSOtest.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="200"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="216"/>
+        <CursorPos Y="234"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="working.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="97"/>
+        <CursorPos X="45" Y="102"/>
+        <UsageCount Value="200"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Working1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="15"/>
+        <UsageCount Value="204"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="dsoUSB.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <CursorPos Y="26"/>
+        <UsageCount Value="200"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="Display.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="30" Y="9"/>
+        <UsageCount Value="125"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="hantekdsoio.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="24"/>
+        <CursorPos X="49" Y="143"/>
+        <UsageCount Value="41"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="libusb.pp"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="39" Y="82"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="/Development/FreePascal/lazarus/lcl/include/buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="36"/>
+        <CursorPos Y="55"/>
+        <UsageCount Value="3"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="/Development/FreePascal/fpc/rtl/objpas/sysutils/sysstr.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="739"/>
+        <CursorPos X="10" Y="757"/>
+        <UsageCount Value="3"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="/Development/FreePascal/lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2720"/>
+        <CursorPos Y="2740"/>
+        <UsageCount Value="3"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="/Development/FreePascal/lazarus/lcl/include/buttons.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="194"/>
+        <CursorPos Y="170"/>
+        <UsageCount Value="3"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="/Development/FreePascal/fpc/rtl/inc/systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="772"/>
+        <CursorPos Y="826"/>
+        <UsageCount Value="4"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="/Development/FreePascal/fpc/rtl/inc/system.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="328"/>
+        <CursorPos X="10" Y="346"/>
+        <UsageCount Value="4"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="dsoControl.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="40"/>
+        <CursorPos Y="69"/>
+        <UsageCount Value="100"/>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="UnusedCode.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="108"/>
+        <CursorPos X="6" Y="48"/>
+        <UsageCount Value="3"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../Development/FreePascal/lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="3647"/>
+        <CursorPos Y="3668"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../Development/FreePascal/lazarus/lcl/grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2385"/>
+        <CursorPos Y="2407"/>
+        <UsageCount Value="8"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="device.h"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos Y="83"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="C++"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="device.cpp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="331"/>
+        <CursorPos Y="340"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="C++"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="types.h"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="52"/>
+        <CursorPos X="129" Y="511"/>
+        <UsageCount Value="4"/>
+        <DefaultSyntaxHighlighter Value="C++"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="types.cpp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="213"/>
+        <CursorPos X="26" Y="227"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="C++"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="control.cpp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1473"/>
+        <CursorPos X="2" Y="2156"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="C++"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="control.h"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="8"/>
+        <DefaultSyntaxHighlighter Value="C++"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="hantekdsoio.h"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="C++"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="hantekdsoio.cpp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="98" Y="402"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="C++"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="../Development/FreePascal/fpc/rtl/objpas/sysutils/osutilsh.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="95" Y="10"/>
+        <UsageCount Value="7"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="Display.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3"/>
+        <UsageCount Value="63"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="../My Lazarus/DSOofAugust2015/main.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Main"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="789"/>
+        <UsageCount Value="3"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="../My Lazarus/DSOofAugust2015/globals.pas"/>
+        <UnitName Value="Globals"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="137"/>
+        <UsageCount Value="3"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="DisplayMain.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="782"/>
+        <CursorPos X="41" Y="827"/>
+        <UsageCount Value="61"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="../Development/FreePascal/lazarus/lcl/include/customcheckbox.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="115"/>
+        <CursorPos Y="134"/>
+        <UsageCount Value="3"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="../My Lazarus/DiodeTest/k8055Controls.pas"/>
+        <ComponentName Value="K8055"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="K8055Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="406"/>
+        <UsageCount Value="3"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="../My Lazarus/LCTest/EConversions.pas"/>
+        <EditorIndex Value="6"/>
+        <UsageCount Value="80"/>
+        <Loaded Value="True"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="../My Lazarus/LCTest/unit1.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="61"/>
+        <CursorPos X="13" Y="96"/>
+        <UsageCount Value="3"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="../Development/FreePascal/fpc/packages/fpgtk/src/fpgtkext.pp"/>
+        <UnitName Value="FPgtkExt"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="122"/>
+        <CursorPos Y="142"/>
+        <UsageCount Value="8"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="../Development/FreePascal/fpc/packages/fv/src/msgbox.pas"/>
+        <UnitName Value="MsgBox"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <UsageCount Value="8"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="../Hantek2090CodeMinimum/main.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="389"/>
+        <CursorPos Y="430"/>
+        <UsageCount Value="8"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="main.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="67"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="../Development/FreePascal/fpc/rtl/objpas/character.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="152"/>
+        <CursorPos X="3" Y="175"/>
+        <UsageCount Value="10"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="../Development/FreePascal/fpc/rtl/inc/systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="923"/>
+        <CursorPos Y="860"/>
+        <UsageCount Value="10"/>
+      </Unit40>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="main.pas"/>
+        <Caret Line="12" Column="20"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Display.pas"/>
+        <Caret Line="77" TopLine="13"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Display.pas"/>
+        <Caret Line="76" TopLine="37"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Display.pas"/>
+        <Caret Line="75" TopLine="36"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Display.pas"/>
+        <Caret Line="74" TopLine="35"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Display.pas"/>
+        <Caret Line="73" TopLine="34"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Display.pas"/>
+        <Caret Line="72" TopLine="33"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Display.pas"/>
+        <Caret Line="71" TopLine="32"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Display.pas"/>
+        <Caret Line="70" TopLine="31"/>
+      </Position9>
+      <Position10>
+        <Filename Value="Display.pas"/>
+        <Caret Line="69" TopLine="30"/>
+      </Position10>
+      <Position11>
+        <Filename Value="Display.pas"/>
+        <Caret Line="68" TopLine="29"/>
+      </Position11>
+      <Position12>
+        <Filename Value="Display.pas"/>
+        <Caret Line="67" TopLine="28"/>
+      </Position12>
+      <Position13>
+        <Filename Value="Display.pas"/>
+        <Caret Line="66" TopLine="27"/>
+      </Position13>
+      <Position14>
+        <Filename Value="Display.pas"/>
+        <Caret Line="65" TopLine="26"/>
+      </Position14>
+      <Position15>
+        <Filename Value="Display.pas"/>
+        <Caret Line="64" TopLine="25"/>
+      </Position15>
+      <Position16>
+        <Filename Value="Display.pas"/>
+        <Caret Line="63" TopLine="24"/>
+      </Position16>
+      <Position17>
+        <Filename Value="Display.pas"/>
+        <Caret Line="62" TopLine="23"/>
+      </Position17>
+      <Position18>
+        <Filename Value="Display.pas"/>
+        <Caret Line="61" TopLine="22"/>
+      </Position18>
+      <Position19>
+        <Filename Value="Display.pas"/>
+        <Caret Line="60" TopLine="21"/>
+      </Position19>
+      <Position20>
+        <Filename Value="Display.pas"/>
+        <Caret Line="59" TopLine="20"/>
+      </Position20>
+      <Position21>
+        <Filename Value="Display.pas"/>
+        <Caret Line="58" TopLine="19"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Display.pas"/>
+        <Caret Line="57"/>
+      </Position22>
+      <Position23>
+        <Filename Value="main.pas"/>
+        <Caret Line="147" Column="16" TopLine="217"/>
+      </Position23>
+      <Position24>
+        <Filename Value="main.pas"/>
+        <Caret Line="200" Column="7" TopLine="180"/>
+      </Position24>
+      <Position25>
+        <Filename Value="Display.pas"/>
+        <Caret Line="63"/>
+      </Position25>
+      <Position26>
+        <Filename Value="Display.pas"/>
+        <Caret Line="18" Column="46" TopLine="6"/>
+      </Position26>
+      <Position27>
+        <Filename Value="Display.pas"/>
+        <Caret Line="37" Column="18" TopLine="16"/>
+      </Position27>
+      <Position28>
+        <Filename Value="Display.pas"/>
+        <Caret Line="45" TopLine="10"/>
+      </Position28>
+      <Position29>
+        <Filename Value="Display.pas"/>
+        <Caret Line="37" Column="6" TopLine="17"/>
+      </Position29>
+      <Position30>
+        <Filename Value="Display.pas"/>
+        <Caret Line="9" Column="30"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <Watches Count="1">
+      <Item1>
+        <Expression Value="UseChannels"/>
+      </Item1>
+    </Watches>
+  </Debugging>
+</CONFIG>
