@@ -1,0 +1,690 @@
+object Form1: TForm1
+  Left = 100
+  Height = 622
+  Top = 100
+  Width = 180
+  Caption = 'DSO-2090 Control'
+  ClientHeight = 622
+  ClientWidth = 180
+  OnCreate = FormCreate
+  LCLVersion = '1.7'
+  Visible = False
+  object BSample: TButton
+    Left = 48
+    Height = 25
+    Top = 584
+    Width = 75
+    Caption = 'Sample'
+    OnClick = BSampleClick
+    TabOrder = 0
+  end
+  object GBCh1: TGroupBox
+    Left = 0
+    Height = 114
+    Top = 0
+    Width = 175
+    BorderSpacing.Around = 10
+    BorderSpacing.InnerBorder = 2
+    Caption = 'Channel One'
+    ClientHeight = 97
+    ClientWidth = 171
+    Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+    object CBCh1Range: TComboBox
+      Left = 7
+      Height = 27
+      Top = 15
+      Width = 82
+      Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 2
+      Items.Strings = (
+        '5 V'
+        '2 V'
+        '1 V'
+        '500 mV'
+        '200 mV'
+        '100 mV'
+        '50 mV'
+        '20 mv'
+        '10 Mv'
+      )
+      OnChange = DoUpdateRange
+      ParentFont = False
+      TabOrder = 0
+      Text = '1 V'
+    end
+    object Label1: TLabel
+      Left = 8
+      Height = 15
+      Top = 0
+      Width = 41
+      Caption = 'Range'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 104
+      Height = 15
+      Top = 0
+      Width = 57
+      Caption = 'Coupling'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object CBCh1Coupling: TComboBox
+      Left = 105
+      Height = 27
+      Top = 15
+      Width = 57
+      Font.Height = -11
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 1
+      Items.Strings = (
+        'AC'
+        'DC'
+        'OFF'
+      )
+      OnChange = DoUpdateCoupling
+      ParentFont = False
+      TabOrder = 1
+      Text = 'DC'
+    end
+    object CBCh1BW: TCheckBox
+      Left = 101
+      Height = 24
+      Top = 39
+      Width = 64
+      AutoSize = False
+      Caption = 'BW'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      OnChange = DoBWUpdate
+      ParentFont = False
+      TabOrder = 2
+    end
+    object PCh1Trig: TPanel
+      Left = 8
+      Height = 14
+      Top = 44
+      Width = 15
+      Color = clLime
+      ParentColor = False
+      TabOrder = 3
+    end
+    object Label8: TLabel
+      Left = 29
+      Height = 15
+      Top = 44
+      Width = 23
+      Caption = 'Trig'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object SBCh1Offset: TScrollBar
+      Left = 8
+      Height = 13
+      Top = 79
+      Width = 153
+      PageSize = 0
+      Position = 50
+      TabOrder = 4
+      OnChange = SBOffsetChange
+    end
+    object LCh1Offset: TLabel
+      Left = 146
+      Height = 13
+      Top = 63
+      Width = 14
+      Caption = '50'
+      Font.Height = -11
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label14: TLabel
+      Left = 8
+      Height = 15
+      Top = 64
+      Width = 39
+      Caption = 'Offset'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object GBCh2: TGroupBox
+    Left = 0
+    Height = 113
+    Top = 120
+    Width = 175
+    Caption = 'Channel Two'
+    ClientHeight = 96
+    ClientWidth = 171
+    Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+    object CBCh2Range: TComboBox
+      Left = 8
+      Height = 27
+      Top = 15
+      Width = 82
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 2
+      Items.Strings = (
+        '5 V'
+        '2 V'
+        '1 V'
+        '500 mV'
+        '200 mV'
+        '100 mV'
+        '50 mV'
+        '20 mv'
+        '10 Mv'
+      )
+      ParentFont = False
+      TabOrder = 0
+      Text = '1 V'
+    end
+    object Label3: TLabel
+      Left = 8
+      Height = 15
+      Top = 0
+      Width = 41
+      Caption = 'Range'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 104
+      Height = 15
+      Top = 0
+      Width = 57
+      Caption = 'Coupling'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object CBCh2Coupling: TComboBox
+      Left = 104
+      Height = 27
+      Top = 15
+      Width = 57
+      Font.Height = -11
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 1
+      Items.Strings = (
+        'AC'
+        'DC'
+        'OFF'
+      )
+      OnChange = DoUpdateCoupling
+      ParentFont = False
+      TabOrder = 1
+      Text = 'DC'
+    end
+    object CBCh2BW: TCheckBox
+      Left = 102
+      Height = 24
+      Top = 38
+      Width = 64
+      AutoSize = False
+      Caption = 'BW'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      OnChange = DoBWUpdate
+      ParentFont = False
+      TabOrder = 2
+    end
+    object PCh2Trig: TPanel
+      Left = 8
+      Height = 14
+      Top = 43
+      Width = 15
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 3
+    end
+    object Label10: TLabel
+      Left = 29
+      Height = 15
+      Top = 43
+      Width = 23
+      Caption = 'Trig'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object SBCh2Offset: TScrollBar
+      Left = 8
+      Height = 13
+      Top = 79
+      Width = 153
+      PageSize = 0
+      Position = 50
+      TabOrder = 4
+      OnChange = SBOffsetChange
+    end
+    object LCh2Offset: TLabel
+      Left = 146
+      Height = 13
+      Top = 63
+      Width = 14
+      Caption = '50'
+      Font.Height = -11
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label15: TLabel
+      Left = 8
+      Height = 15
+      Top = 64
+      Width = 39
+      Caption = 'Offset'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object GBTrigger: TGroupBox
+    Left = 0
+    Height = 213
+    Top = 363
+    Width = 175
+    Caption = 'Trigger'
+    ClientHeight = 196
+    ClientWidth = 171
+    Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+    object CBTrigSource: TComboBox
+      Left = 8
+      Height = 27
+      Top = 15
+      Width = 82
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'Ch1'
+        'Ch2'
+        'Alt'
+        'Ext'
+      )
+      OnChange = CBTrigSourceChange
+      ParentFont = False
+      TabOrder = 0
+      Text = 'Ch1'
+    end
+    object Label5: TLabel
+      Left = 8
+      Height = 15
+      Top = 0
+      Width = 44
+      Caption = 'Source'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object CBTrigSlope: TComboBox
+      Left = 104
+      Height = 27
+      Top = 16
+      Width = 57
+      Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        '+'
+        '-'
+      )
+      OnChange = DoTrigSlopeChange
+      ParentFont = False
+      TabOrder = 1
+      Text = '+'
+    end
+    object Label6: TLabel
+      Left = 104
+      Height = 15
+      Top = 0
+      Width = 36
+      Caption = 'Slope'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object CBTrigBW: TCheckBox
+      Left = 104
+      Height = 24
+      Top = 38
+      Width = 64
+      AutoSize = False
+      Caption = 'BW'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      OnChange = DoBWUpdate
+      ParentFont = False
+      TabOrder = 2
+    end
+    object PExtTrig: TPanel
+      Left = 8
+      Height = 14
+      Top = 43
+      Width = 15
+      Color = clSilver
+      ParentColor = False
+      TabOrder = 3
+    end
+    object Label9: TLabel
+      Left = 29
+      Height = 15
+      Top = 43
+      Width = 48
+      Caption = 'Ext Trig'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object CBTrigMode: TComboBox
+      Left = 8
+      Height = 27
+      Top = 80
+      Width = 82
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 1
+      Items.Strings = (
+        'Norm'
+        'Auto'
+        'Single'
+      )
+      ParentFont = False
+      TabOrder = 4
+      Text = 'Auto'
+    end
+    object Label7: TLabel
+      Left = 8
+      Height = 15
+      Top = 64
+      Width = 35
+      Caption = 'Mode'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object SBTrigOffset: TScrollBar
+      Left = 8
+      Height = 13
+      Top = 129
+      Width = 153
+      Max = 255
+      PageSize = 0
+      Position = 192
+      TabOrder = 5
+      OnChange = SBOffsetChange
+    end
+    object LTrigOffset: TLabel
+      Left = 148
+      Height = 13
+      Top = 113
+      Width = 15
+      Caption = 'C0'
+      Font.Height = -11
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label16: TLabel
+      Left = 7
+      Height = 15
+      Top = 113
+      Width = 39
+      Caption = 'Offset'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object SBTrigPosition: TScrollBar
+      Left = 7
+      Height = 13
+      Top = 170
+      Width = 153
+      LargeChange = 5
+      PageSize = 0
+      TabOrder = 6
+      OnChange = SBTrigPositionChange
+    end
+    object Label17: TLabel
+      Left = 8
+      Height = 15
+      Top = 150
+      Width = 52
+      Caption = 'Position'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LTrigPosition: TLabel
+      Left = 149
+      Height = 13
+      Top = 154
+      Width = 7
+      Caption = '0'
+      Font.Height = -11
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object GBSampling: TGroupBox
+    Left = 1
+    Height = 123
+    Top = 237
+    Width = 175
+    Caption = 'Sampling'
+    ClientHeight = 106
+    ClientWidth = 171
+    Color = clWhite
+    Font.Height = -13
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 4
+    object LSampleRate: TLabel
+      Left = 2
+      Height = 15
+      Top = 0
+      Width = 30
+      Caption = 'S/Ms'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object CBBufferSize: TComboBox
+      Left = 91
+      Height = 27
+      Top = 16
+      Width = 71
+      Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        '10K'
+        '32K'
+        '256'
+      )
+      OnChange = DoBufferChange
+      ParentBidiMode = False
+      ParentFont = False
+      TabOrder = 0
+      Text = '10K'
+    end
+    object Label12: TLabel
+      Left = 92
+      Height = 15
+      Top = 0
+      Width = 33
+      Caption = 'S/Cnl'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LDurationCap: TLabel
+      Left = 6
+      Height = 15
+      Top = 67
+      Width = 60
+      Caption = 'Duration:'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object CBSampleRate: TComboBox
+      Left = 2
+      Height = 27
+      Top = 16
+      Width = 71
+      Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ItemHeight = 0
+      ItemIndex = 1
+      Items.Strings = (
+        '100k'
+        '50k'
+        '25K'
+        '12.5k'
+        '10k'
+        '5k'
+        '2.5k'
+        '1.25k'
+        '1k'
+        '500'
+        '250'
+        '100'
+        '50'
+        'Other'
+      )
+      OnChange = CBSampleRateChange
+      OnClick = CBSampleRateClick
+      ParentBidiMode = False
+      ParentFont = False
+      TabOrder = 1
+      Text = '50k'
+    end
+    object LDuration: TLabel
+      Left = 84
+      Height = 15
+      Top = 67
+      Width = 66
+      Caption = '0.2408 Ms'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LOtherSampleRate: TLabel
+      Left = -1
+      Height = 15
+      Top = -255
+      Width = 60
+      Caption = 'Duration:'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LuSSample: TLabel
+      Left = 9
+      Height = 15
+      Top = 49
+      Width = 69
+      Caption = 'uS/Sample'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LuSSampleValue: TLabel
+      Left = 85
+      Height = 15
+      Top = 49
+      Width = 55
+      Caption = '0.002 us'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LOther: TLabel
+      Left = 6
+      Height = 15
+      Top = 85
+      Width = 74
+      Caption = 'Other S/Ms:'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LOtherRateValue: TLabel
+      Left = 85
+      Height = 15
+      Top = 85
+      Width = 32
+      Caption = '1000'
+      Font.Height = -13
+      Font.Name = 'Sans'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+end
