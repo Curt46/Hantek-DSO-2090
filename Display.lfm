@@ -1,0 +1,40 @@
+object Form2: TForm2
+  Left = 464
+  Height = 614
+  Top = 100
+  Width = 512
+  BorderIcons = []
+  BorderStyle = bsSingle
+  ClientHeight = 614
+  ClientWidth = 512
+  OnCreate = FormCreate
+  Visible = True
+  object SGridData: TStringGrid
+    Left = 32
+    Height = 560
+    Top = 24
+    Width = 138
+    ColCount = 3
+    DefaultColWidth = 40
+    DefaultRowHeight = 18
+    FixedCols = 0
+    FixedRows = 0
+    Font.Height = -11
+    Font.Name = 'Sans'
+    ParentFont = False
+    RowCount = 32768
+    TabOrder = 0
+    TitleFont.Height = -11
+    TitleFont.Name = 'Sans'
+  end
+  object Memo1: TMemo
+    Left = 192
+    Height = 552
+    Top = 24
+    Width = 296
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 1
+  end
+end
